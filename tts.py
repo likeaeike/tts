@@ -1,1 +1,2 @@
-#!/bin/bash
+#!/usr/bin/env python3
+import pyttsx3
