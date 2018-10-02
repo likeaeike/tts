@@ -16,7 +16,7 @@ fi
 echo ""
 echo "--- Update first! ---"
 echo ""
-apt update 
+apt update
 apt upgrade -y
 
 
@@ -33,8 +33,7 @@ echo ""
 echo "--- Download tts.py from GitHub Repository ---"
 echo ""
 
-mkdir /opt/tts
-cd /opt/tts
+cd /opt
 git clone https://github.com/likeaeike/tts.git
 
 
@@ -43,3 +42,4 @@ echo "--- Edit .bashrc ---"
 echo ""
 
 echo "alias tts='python /opt/tts/tts.py'" >> ~/.bashrc
+source ~/.bashrc
