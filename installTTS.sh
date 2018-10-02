@@ -35,11 +35,11 @@ echo ""
 
 mkdir /opt/tts
 cd /opt/tts
-git clone https://kommt.noch/index.html
+git clone https://github.com/likeaeike/tts.git
 
 
 echo ""
 echo "--- Edit .bashrc ---"
 echo ""
 
-echo "alias tts='python /opt/tts/FILE'" >> ~/.bashrc
+echo "alias tts='python /opt/tts/tts.py'" >> ~/.bashrc
