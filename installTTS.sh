@@ -12,6 +12,11 @@ else
     exit
 fi
 
+echo ""
+echo "--- Type in your Username: ---"
+echo ""
+read -p "Username: " uservar
+
 
 echo ""
 echo "--- Update first! ---"
@@ -42,4 +47,9 @@ echo "--- Edit .bashrc ---"
 echo ""
 
 echo "alias tts='python /opt/tts/tts.py'" >> ~/.bashrc
+echo "alias tts='python /opt/tts/tts.py'" >> /home/$uservar/.bashrc
 source ~/.bashrc
+
+echo ""
+echo "--- Run 'source ~/.bashrc' ---"
+echo ""
